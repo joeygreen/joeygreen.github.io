@@ -1,6 +1,0 @@
-@mixin placeholder($color, $fontsize: 100%) {
-  &::-webkit-input-placeholder { color: $color; font-size: $fontsize; }
-  &:-moz-placeholder { /* Firefox 18- */ color: $color; font-size: $fontsize;  }
-  &::-moz-placeholder {  /* Firefox 19+ */ color: $color; font-size: $fontsize;  }
-  &:-ms-input-placeholder { color: $color; font-size: $fontsize;  }
-}
