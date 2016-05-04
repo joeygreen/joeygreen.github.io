@@ -1,0 +1,122 @@
+/* line 5, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/* line 4, ../../../sass/layout.scss */
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* dev *
+div { background: rgba(255, 255, 255, 0.05); border: 1px solid #888;}
+/* */
+/* Flex Setup */
+/* line 12, ../../../sass/layout.scss */
+.flex-container { height: 100vh; width: 100%; }
+
+/* line 16, ../../../sass/layout.scss */
+.flex-col { display: flex; flex-direction: column; }
+
+/* line 20, ../../../sass/layout.scss */
+.flex-row { display: flex; flex-direction: row; }
+
+/* Flex Child */
+/* line 25, ../../../sass/layout.scss */
+.flex-col > div, .flex-row > div { flex: 1; }
+
+/* line 29, ../../../sass/layout.scss */
+div.flex-grow-no { flex: 0; }
+
+/* Layout */
+/* line 33, ../../../sass/layout.scss */
+#header { flex: 0 0 50px; }
+
+/* line 36, ../../../sass/layout.scss */
+#menu { flex: 0 0 150px; padding: 10px 0 0 0; }
+
+/* line 40, ../../../sass/layout.scss */
+#queue { padding: 10px; }
+
+/* line 43, ../../../sass/layout.scss */
+div.expander-req { flex: 0 0 60px; /* * flex: 0 0 60%; /* */ transition: flex 400ms ease-out; overflow: hidden; /* &:hover { */ }
+/* line 49, ../../../sass/layout.scss */
+div.expander-req.show { flex: 0 0 60%; }
+/* line 51, ../../../sass/layout.scss */
+div.expander-req.show .rotate-text { top: 7px; left: 7px; transform: rotate(0deg); }
+/* line 57, ../../../sass/layout.scss */
+div.expander-req .search { flex: 0 0 50px; line-height: 50px; padding-left: 135px; }
+/* line 61, ../../../sass/layout.scss */
+div.expander-req .search input { border-radius: 5px; line-height: 30px; }
+
+/* line 67, ../../../sass/layout.scss */
+div.expander-icon { cursor: pointer; flex: 0 0 55px; position: relative; transition: color 400ms ease-out; padding: 5px; }
+/* line 73, ../../../sass/layout.scss */
+div.expander-icon div.rotate-text { position: absolute; top: 0; left: 50px; line-height: 50px; padding-left: 50px; font-size: 200%; transition: all 400ms ease-out; transform: rotate(90deg); transform-origin: top left; }
+
+/* line 85, ../../../sass/layout.scss */
+#content { position: relative; }
+
+/* line 86, ../../../sass/layout.scss */
+#content #req-notice { position: absolute; z-index: 100; top: 0; left: 0; width: 100%; height: 0; padding: 0; background: rgba(0, 0, 0, 0.85); font-size: 125%; text-align: center; overflow: hidden; transition: height 200ms ease-out, padding 200ms ease-in; }
+
+/* * #content #req-notice, /* */
+/* line 101, ../../../sass/layout.scss */
+#content #req-notice.show { height: auto; padding: 10px 0; }
+
+/* Modal */
+/* line 107, ../../../sass/layout.scss */
+#modal { position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 200; background: rgba(0, 0, 0, 0.7); display: none; }
+
+/* line 108, ../../../sass/layout.scss */
+#modal .modal-container { position: relative; margin: 50px auto; }
+
+/* line 109, ../../../sass/layout.scss */
+#modal .modal-close { position: absolute; top: 2px; right: 4px; cursor: pointer; }
+
+/* line 110, ../../../sass/layout.scss */
+#modal .modal-content { padding: 15px 10px; }
+
+/* Generic Settings */
+/* line 113, ../../../sass/layout.scss */
+:focus { outline-color: transparent; outline-style: none; }
+
+/* line 117, ../../../sass/layout.scss */
+.cf:after, .cf:before { content: " "; display: table; }
+
+/* line 122, ../../../sass/layout.scss */
+.cf:after { clear: both; }
+
+/* line 125, ../../../sass/layout.scss */
+.cf { *zoom: 1; }
+
+/* line 128, ../../../sass/layout.scss */
+.c { text-align: center; }
+
+/* line 131, ../../../sass/layout.scss */
+.r { text-align: right; }
+
+/* line 134, ../../../sass/layout.scss */
+.l { text-align: left; }
+
+/* line 138, ../../../sass/layout.scss */
+.fl { float: left; }

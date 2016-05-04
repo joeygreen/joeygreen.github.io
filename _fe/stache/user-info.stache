@@ -1,0 +1,21 @@
+{{#if user_name}}
+<i class="fa fa-user"></i> {{user_name}}
+{{else}}
+<a on-click="signin_click()"><i class="fa fa-sign-in"></i> Sign-in</a>
+{{/if}}
+<!-- Templates -->
+<script type="text/mustache" id="tpl-sign-in">
+<form action="/forum/ucp.php?mode=login" method="post" target="_top">
+	<strong>Hello Guest!</strong><br />
+	<label>Login</label><br />
+	<input type="text" name="username" maxlength="40" class="input" /><br />
+	<label>Password</label><br />
+	<input type="password" name="password" maxlength="25" class="input"  style="margin-bottom: 3px;"/><br />
+	<input type="submit" class="submit" name="login" value="Login" /><br />
+	<br />
+	<input type="hidden" name="outside" value="1" />
+	<input type="hidden" name="autologin" value="1" />
+	<input type="hidden" name="redirect" value="../req/" />
+</form>
+<a href="/forum/ucp.php?mode=register">Are you NEW?  Click here to sign up!</a>
+</script>
